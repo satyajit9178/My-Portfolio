@@ -1,4 +1,9 @@
+import {projects} from '../data/projects.js';
+
 document.addEventListener("DOMContentLoaded", () => {
+  const containerElement=document.querySelector('.projects');
+  displayProjects(containerElement);
+  document.querySelector('.theme-item').addEventListener('click',theme);
   const scrollContainer = document.querySelector('.wrapper');
 
   // Create a ScrollReveal instance that listens to the .wrapper scroll
@@ -95,3 +100,32 @@ menuItems.forEach(item=>{
     )
   });
 });
+
+
+
+function displayProjects(containerElement){
+  let elementHTML='';
+
+    projects.forEach((project)=>{
+      elementHTML+=`<div class="project proj">
+            <img src="${project.img}" alt="">
+            <h3>${project.name}: <span class="colored">${project.descp}</span></h3>
+            <div class="link">
+              <div class="web-link">
+                <a href="${project.weblink}" target="_blank"><ion-icon name="share-outline"></ion-icon></a>
+              </div>
+              <div class="code-link">
+                <a href="${project.codelink}"><ion-icon name="code-slash-outline"></ion-icon></a>
+              </div>
+            </div>
+          </div>`
+    });
+
+    containerElement.innerHTML=elementHTML;
+}
+
+document.querySelector(
+  '.resume').addEventListener('click',(e)=>{
+    e.preventDefault(); // prevent navigation if using #
+    alert("Resume will be added shortly");
+  })
