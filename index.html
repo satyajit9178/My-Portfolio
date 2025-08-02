@@ -17,7 +17,7 @@
 
     <nav class="navbar">
       <div class="box theme">
-        <div class="item" onclick="theme()">
+        <div class="item theme-item" onclick="theme()">
           <ion-icon id="lightBtn"
            name="sunny-outline"></ion-icon>
            <ion-icon id="darkBtn" name="moon-outline" style="display: none;"></ion-icon>
@@ -32,7 +32,7 @@
           <div class="divider rtl"></div>
         </div>
         <div class="item ">
-          <a href="#resume">
+          <a href="#resume" class="resume">
             <ion-icon name="file-tray-full-outline"></ion-icon>
             <p>resume</p>
           </a>
@@ -46,7 +46,7 @@
           <div class="divider rtl"></div>
         </div>
         <div class="item ">
-          <a href="#blogs">
+          <a href="#blogs" class="blog">
             <ion-icon name="layers-outline"></ion-icon>
             <p>blogs</p>
           </a>
@@ -83,7 +83,7 @@
         <table>
           <tr>
             <td><a href="#">My Resume<ion-icon name="file-tray-full-outline"></ion-icon></a></td>
-            <td><a href="#">Contact Me<ion-icon name="call-outline"></ion-icon></a></td>
+            <td><a href="#contact">Contact Me<ion-icon name="call-outline"></ion-icon></a></td>
           </tr>
         </table>
       </div>
@@ -106,15 +106,15 @@
         <!------------Achievements------------->
         <section class="achievements">
           <div>
-            <h3><ion-icon name="layers-outline"></ion-icon>2k+</h3>
+            <h3><ion-icon name="layers-outline"></ion-icon>200</h3>
             <p>Website Designed</p>
           </div>
           <div>
-            <h3><ion-icon name="briefcase-outline"></ion-icon>5+</h3>
-            <p>Years of Experienc</p>
+            <h3><ion-icon name="briefcase-outline"></ion-icon>NA</h3>
+            <p>Years of Experience</p>
           </div>
           <div>
-            <h3><ion-icon name="rocket-outline"></ion-icon>4k</h3>
+            <h3><ion-icon name="rocket-outline"></ion-icon>50+</h3>
             <p>Completed Projects</p>
           </div>
         </section>
@@ -163,48 +163,6 @@
         <div class="divider ltr"></div>
     
         <section class="projects">
-          
-          <div class="project-1 proj">
-            <img src="image/taskflow.png" alt="">
-            <h3>Taskflow-ToDo:<span class="colored"> A sleek and responsive task management tool that lets users add, track, and delete tasks easily. Built with JavaScript, HTML, and CSS.</span></h3>
-
-            <div class="link">
-              <div class="web-link">
-                <a href="https://todo-project-ten-chi.vercel.app/" target="_blank"><ion-icon name="share-outline"></ion-icon></a>
-              </div>
-              <div class="code-link">
-                <a href="https://github.com/satyajit9178/todo-project"><ion-icon name="code-slash-outline"></ion-icon></a>
-              </div>
-            </div>
-          </div>
-    
-          <div class="project-2 proj">
-            <img src="image/countdown.png" alt="">
-            <h3>Countdown Timer: <span class="colored"> A customizable countdown app that takes a future date and time, then shows the remaining days, hours, minutes, and seconds with a live progress bar.</span></h3>
-
-            <div class="link">
-              <div class="web-link">
-                <a href="https://countdown-project-gold.vercel.app/" target="_blank"><ion-icon name="share-outline"></ion-icon></a>
-              </div>
-              <div class="code-link">
-                <a href="https://github.com/satyajit9178/countdown-project"><ion-icon name="code-slash-outline"></ion-icon></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-3 proj">
-            <img src="image/chatbot.png" alt="">
-            <h3>Chat Bot: <span class="colored">A responsive web-based chatbot that accepts user input and gives dynamic replies using JavaScript and DOM manipulation, mimicking a real-time conversation interface.</span></h3>
-            <div class="link">
-              <div class="web-link">
-                <a href="https://ai-chatbot-wheat-zeta.vercel.app/" target="_blank"><ion-icon name="share-outline"></ion-icon></a>
-              </div>
-              <div class="code-link">
-                <a href="https://github.com/satyajit9178/Ai-Chatbot"><ion-icon name="code-slash-outline"></ion-icon></a>
-              </div>
-            </div>
-          </div>
-
         </section>
 
         <!--contact section-->
@@ -240,7 +198,7 @@
   </div>
 
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwgX2MLfd9mZS33dy7y2BB8omnCMVvZweL9KfZBudLy5YgMJBQDk1kMb-lk66gyQQ_OGw/exec'
     const form = document.forms['submit-to-google-sheet']
