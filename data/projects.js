@@ -32,5 +32,12 @@ export const projects = [{
   descp:"A classic Tic Tac Toe game built using HTML, CSS, and JavaScript. Playable on both desktop and mobile devices.",
   weblink:"https://sct-wd-4-henna.vercel.app/",
   codelink:"https://github.com/satyajit9178/SCT_WD_4",
+  },
+  {
+  name:"Currency-Converter",
+  img:"../image/currency-change.png",
+  descp:"Convert any currency instantly with real-time exchange rates.Fast, accurate, and easy for travel, shopping, or business worldwide.",
+  weblink:"https://currency-change-eight.vercel.app/",
+  codelink:"https://github.com/satyajit9178/Currency-change",
   }
 ]
