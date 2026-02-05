@@ -39,5 +39,11 @@ export const projects = [{
   descp:"Convert any currency instantly with real-time exchange rates.Fast, accurate, and easy for travel, shopping, or business worldwide.",
   weblink:"https://currency-change-eight.vercel.app/",
   codelink:"https://github.com/satyajit9178/Currency-change",
+  },{
+  name:"TechNest Blog",
+  img:"../image/blogPage.png",
+  descp:"A modern blog platform showcasing startups, AI, security, and tech insights with a clean card-based layout and curated latest articles sidebar. Designed for fast browsing and readable content discovery.",
+  weblink:"https://my-blog-site-weld.vercel.app/",
+  codelink:"https://github.com/satyajit9178/My-Blog-site",
   }
 ]
